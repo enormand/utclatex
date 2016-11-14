@@ -75,14 +75,6 @@
 \definecolor{thalesorange}{RGB}{255,115,0}
 \definecolor{thalesgreen}{RGB}{152,191,12}
 
-% pour les nouvelles commandes (espace à la fin)
-\RequirePackage{xspace}
-% pour gérer l'insertion de figures
-\RequirePackage{graphicx}
-\RequirePackage{caption}
-% pour pouvoir inserer des url en bleu sans serif
-\RequirePackage{url}
-\urlstyle{sf}
 
 % configuration de la transformation en PDF
 \RequirePackage{hyperref}
@@ -94,21 +86,37 @@
   pdfcreator=LaTeX,
   pdfproducer=LaTeX with package UTClatex}
 
-% Pour différents types de tableaux
+
+% pour les nouvelles commandes (espace à la fin)
+\RequirePackage{xspace}
+
+% pour gérer l'insertion de figures
+\RequirePackage{graphicx}
+\RequirePackage{caption}
+\RequirePackage{subfigure}
+\RequirePackage{wrapfig}
+
+% pour pouvoir inserer des url en bleu sans serif
+\RequirePackage{url}
+\urlstyle{sf}
+
+% pour différents types de tableaux
 \RequirePackage{multirow}
 \RequirePackage{tabularx}
 \RequirePackage{array}
 \RequirePackage{colortbl}
 \RequirePackage{ltxtable}
-\RequirePackage{subfigure}
-\RequirePackage{wrapfig}
+
 % pour les entetes et pieds de page
 \RequirePackage{fancyhdr}
 \RequirePackage{lettrine}
-% Pour des jolis codes sources
+
+% pour des jolis codes sources
 \RequirePackage[final]{listings}
+
 \RequirePackage{eurosym}
 \RequirePackage{acronym}
+
 \RequirePackage{pifont} % Dingbats font (useful for custom itemize)
 \RequirePackage{natbib}
 
